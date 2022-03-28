@@ -6,15 +6,33 @@ namespace AddressBook
         double contactNumber;
         int postalCode;
 
-        public AddressBookMain(string firstName, string lastName, string email, string city, string state, double contactNumber, int postalCode)
+        // public AddressBookMain(string firstName, string lastName, string email, string city, string state, double contactNumber, int postalCode)
+        // {
+        //     this.firstName = firstName;
+        //     this.lastName = lastName;
+        //     this.email = email;
+        //     this.city = city;
+        //     this.state = state;
+        //     this.contactNumber = contactNumber;
+        //     this.postalCode = postalCode;
+        // }
+
+        public void getContactDetails()
         {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.email = email;
-            this.city = city;
-            this.state = state;
-            this.contactNumber = contactNumber;
-            this.postalCode = postalCode;
+            Console.WriteLine("Enter First Name:");
+            firstName = Console.ReadLine();
+            Console.WriteLine("Enter Last Name:");
+            lastName = Console.ReadLine();
+            Console.WriteLine("Enter City Name:");
+            city = Console.ReadLine();
+            Console.WriteLine("Enter State Name:");
+            state = Console.ReadLine();
+            Console.WriteLine("Enter Contact Number:");
+            contactNumber = Convert.ToInt64(Console.ReadLine());
+            Console.WriteLine("Enter Email :");
+            email = Console.ReadLine();
+            Console.WriteLine("Postal Code :");
+            postalCode = Convert.ToInt32(Console.ReadLine());
         }
 
         public void showContactDetails()
