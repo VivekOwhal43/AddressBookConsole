@@ -1,0 +1,15 @@
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/bin/Debug/net6.0/AddressBook
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/bin/Debug/net6.0/AddressBook.deps.json
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/bin/Debug/net6.0/AddressBook.runtimeconfig.json
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/bin/Debug/net6.0/AddressBook.dll
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/bin/Debug/net6.0/ref/AddressBook.dll
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/bin/Debug/net6.0/AddressBook.pdb
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/obj/Debug/net6.0/AddressBook.csproj.AssemblyReference.cache
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/obj/Debug/net6.0/AddressBook.GeneratedMSBuildEditorConfig.editorconfig
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/obj/Debug/net6.0/AddressBook.AssemblyInfoInputs.cache
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/obj/Debug/net6.0/AddressBook.AssemblyInfo.cs
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/obj/Debug/net6.0/AddressBook.csproj.CoreCompileInputs.cache
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/obj/Debug/net6.0/AddressBook.dll
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/obj/Debug/net6.0/ref/AddressBook.dll
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/obj/Debug/net6.0/AddressBook.pdb
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/obj/Debug/net6.0/AddressBook.genruntimeconfig.cache
