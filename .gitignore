@@ -34,3 +34,6 @@
 # files
 clipboard.txt
 NLog.config
+
+# Directories
+bin/Debug
