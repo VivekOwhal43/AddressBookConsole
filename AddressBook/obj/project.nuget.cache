@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "sEod7OyXkk6f8Q7oWM5Y+hraUB6lb2Rgsw8APBAVb5Az3XaxRWo32nQdousny1hxMoIh4zwmT/UDLK8EvYWVEg==",
+  "dgSpecHash": "XNzbxH8sku3mfvtdd1G/gc60XcCvPuAj7ES1l7anG6ACljnuxn42e7Sto9Xf/35s5Z6moXl0UyM4PyzSt5QuHw==",
   "success": true,
   "projectFilePath": "/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/AddressBook.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/vivek/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0/microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "/home/vivek/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.0/microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "/home/vivek/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "/home/vivek/.nuget/packages/microsoft.extensions.logging/5.0.0/microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "/home/vivek/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "/home/vivek/.nuget/packages/microsoft.extensions.options/5.0.0/microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "/home/vivek/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "/home/vivek/.nuget/packages/nlog/5.0.0-rc2/nlog.5.0.0-rc2.nupkg.sha512",
+    "/home/vivek/.nuget/packages/nlog.config/4.7.15/nlog.config.4.7.15.nupkg.sha512",
+    "/home/vivek/.nuget/packages/nlog.extensions.logging/5.0.0-rc2/nlog.extensions.logging.5.0.0-rc2.nupkg.sha512",
+    "/home/vivek/.nuget/packages/nlog.schema/4.7.15/nlog.schema.4.7.15.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -2,50 +2,47 @@ namespace AddressBook
 {
     public class AddressBookMain
     {
-        string firstName = "", lastName = "", email = "", city = "", state = "";
-        double contactNumber;
-        int postalCode;
+        //NLog Iementation
+        // private readonly NLogDemo nLogDemo = new NLogDemo();
+        public List<AddContact> contactList = new List<AddContact>();
+        
 
-        // public AddressBookMain(string firstName, string lastName, string email, string city, string state, double contactNumber, int postalCode)
-        // {
-        //     this.firstName = firstName;
-        //     this.lastName = lastName;
-        //     this.email = email;
-        //     this.city = city;
-        //     this.state = state;
-        //     this.contactNumber = contactNumber;
-        //     this.postalCode = postalCode;
-        // }
-
-        public void getContactDetails()
+        public void addContactDetails()
         {
+            AddContact addContact = new AddContact();
             Console.WriteLine("Enter First Name:");
-            firstName = Console.ReadLine();
+            addContact.firstName = Console.ReadLine();
+            //nLogDemo.LogDebug("SuccessS done okay");
             Console.WriteLine("Enter Last Name:");
-            lastName = Console.ReadLine();
+            addContact.lastName = Console.ReadLine();
             Console.WriteLine("Enter City Name:");
-            city = Console.ReadLine();
+            addContact.city = Console.ReadLine();
             Console.WriteLine("Enter State Name:");
-            state = Console.ReadLine();
+            addContact.state = Console.ReadLine();
             Console.WriteLine("Enter Contact Number:");
-            contactNumber = Convert.ToInt64(Console.ReadLine());
+            addContact.contactNumber = Convert.ToInt64(Console.ReadLine());
             Console.WriteLine("Enter Email :");
-            email = Console.ReadLine();
+            addContact.email = Console.ReadLine();
             Console.WriteLine("Postal Code :");
-            postalCode = Convert.ToInt32(Console.ReadLine());
+            addContact.postalCode = Convert.ToInt32(Console.ReadLine());
+            contactList.Add(addContact);            // Add Details to contacts
         }
 
         public void showContactDetails()
         {
-            Console.WriteLine("============ Contact Details =========");
-            Console.WriteLine("First Name  : " + firstName);
-            Console.WriteLine("Last Name   : " + lastName);
-            Console.WriteLine("City Name:  : " + city);
-            Console.WriteLine("State  Name : " + state);
-            Console.WriteLine("Contact Num : " + contactNumber);
-            Console.WriteLine("Enter Email : " + email);
-            Console.WriteLine("Postal Code : " + postalCode);
-
+            int contactCount = 1; // displaying contact number in address book
+            foreach (var details in contactList)
+            {
+                Console.WriteLine($"============ Contact {contactCount} Details =========");
+                Console.WriteLine("First Name  : " + details.firstName);
+                Console.WriteLine("Last Name   : " + details.lastName);
+                Console.WriteLine("City Name:  : " + details.city);
+                Console.WriteLine("State  Name : " + details.state);
+                Console.WriteLine("Contact Num : " + details.contactNumber);
+                Console.WriteLine("Enter Email : " + details.email);
+                Console.WriteLine("Postal Code : " + details.postalCode);
+                contactCount++;
+            }
         }
     }
 }

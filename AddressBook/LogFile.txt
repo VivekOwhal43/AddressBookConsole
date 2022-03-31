@@ -1,0 +1,3 @@
+2022-03-30 18:27:05.4039|DEBUG|NLogDemo|SuccessS done okay
+2022-03-30 18:35:01.9238|DEBUG|NLogDemo|SuccessS done okay
+2022-03-30 18:35:09.2226|ERROR|NLogDemo|Enter int you have entered string

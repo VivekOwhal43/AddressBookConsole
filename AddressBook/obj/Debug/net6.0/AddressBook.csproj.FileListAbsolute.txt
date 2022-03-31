@@ -13,3 +13,14 @@
 /home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/obj/Debug/net6.0/ref/AddressBook.dll
 /home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/obj/Debug/net6.0/AddressBook.pdb
 /home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/obj/Debug/net6.0/AddressBook.genruntimeconfig.cache
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/bin/Debug/net6.0/NLog.config
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/bin/Debug/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/bin/Debug/net6.0/Microsoft.Extensions.Logging.dll
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/bin/Debug/net6.0/Microsoft.Extensions.Options.dll
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/bin/Debug/net6.0/Microsoft.Extensions.Primitives.dll
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/bin/Debug/net6.0/NLog.dll
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/bin/Debug/net6.0/NLog.Extensions.Logging.dll
+/home/vivek/bridgelabz/AddressBook/AddressBookConsole/AddressBook/obj/Debug/net6.0/AddressBook.csproj.CopyComplete
