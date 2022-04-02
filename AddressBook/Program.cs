@@ -20,7 +20,7 @@ namespace AddressBook
             do
             {
                 Console.Write("\nSelect Option from below Menu");
-                Console.WriteLine("\n 1. Add Contact \n 2. Show Contact List \n 3. Search and Edit Contact");
+                Console.WriteLine("\n 1. Add Contact \n 2. Show Contact List \n 3. Search Via Name and Edit Contact \n 4. Search Via Name and Delete Contact");
                 Console.Write("\nEnter Choice: ");
                 choiceNumber = Convert.ToInt32(Console.ReadLine());
                 switch (choiceNumber)
@@ -42,11 +42,15 @@ namespace AddressBook
                         addressBookMain.editContact();
                     break;
 
+                    case 4:
+                        addressBookMain.deleteContact();
+                    break;
+
                     default:
                         Console.Write($"Enter A Value in specified Range");
                     break;
                 }
-                Console.Write("\nDo you want to continue ? \nPress 1 to Continue \nPress 2 to Exit\n");
+                Console.Write("\nDo you want to continue in Address Book Main Menu ? \n Press 1 to Continue \n Press 2 to Exit\n");
                 Console.Write("\nEnter Choice: ");
                 quit =Convert.ToInt32(Console.ReadLine());
             } while (quit !=2);

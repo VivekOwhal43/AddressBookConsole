@@ -47,13 +47,20 @@ namespace AddressBook
                 Console.WriteLine("Postal Code : " + details.postalCode);
                 contactCount++;
             }
+            if (contactList.Count == 0)
+            {
+                Console.WriteLine(" No contacts has been added in list \n Please add contacts and try again");
+            }
+            else
+            {
+                Console.Write($"\nContact Not Found");
+            }
         }
 
         public void editContact()
         {
             do
             {
-                Console.WriteLine("Select one option from Menu \n1. Edit Contact Using Name");
                 Console.Write("Enter Name : ");
                 string searchName = Console.ReadLine();
                 foreach (var contact in contactList)
@@ -124,11 +131,41 @@ namespace AddressBook
                         Console.Write($"\nContact Not Found");
                     }
                 }
-                //Console.WriteLine("1.Edit Contact Using Name");
-                Console.WriteLine("Do you want to continue? \nEnter 1 For YES and 2 For NO");
+                Console.WriteLine("Do you want to continue Editing Addressbook? \n Enter 1 For 'YES' and 2 For 'NO' ");
                 ch = Convert.ToInt32(Console.ReadLine());
             } while (ch != 2);
-            Console.WriteLine("Exit from Edit Contact.");
+            Console.WriteLine(" Exit from Edit Menu");
+        }
+
+        public void deleteContact()
+        {
+            do
+            {
+                Console.WriteLine(" \n Delete Contact Using Name");
+                Console.Write("Enter Name : ");
+                string searchName = Console.ReadLine();
+                foreach (var contact in contactList)
+                {
+                    if (searchName == contact.firstName)
+                    {
+                        contactList.Remove(contact);
+                        Console.Write($" Coontact Deleted Successfully \n");
+                        // addContactDetails();
+                    }
+                    else if (searchName != contact.firstName)
+                    {
+                        Console.WriteLine("No contacts has been added in list \n Please add contacts and try again");
+                    }
+                    else
+                    {
+                        Console.Write($"\nContact Not Found");
+                    }
+                }
+                //Console.WriteLine("1.Edit Contact Using Name");
+                Console.WriteLine("Do you want to continue deleting contacts in Addressbook? \n Enter 1 For 'YES' and 2 For 'NO' ");
+                ch = Convert.ToInt32(Console.ReadLine());
+            } while (ch != 2);
+            Console.WriteLine("Exit from Delete Menu");
         }
     }
 }
