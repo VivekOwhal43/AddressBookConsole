@@ -17,13 +17,14 @@ namespace AddressBook
             // 
             // //addressBookMain.getContactDetails();
             // addressBookMain.showContactDetails();
-            do
+            do              //this loop is for continuously adding data and removing data and updating record.
+            //until the choice is 2 for exit.
             {
                 Console.Write("\nSelect Option from below Menu");
                 Console.WriteLine("\n 1. Add Contact \n 2. Show Contact List \n 3. Search Via Name and Edit Contact \n 4. Search Via Name and Delete Contact");
                 Console.Write("\nEnter Choice: ");
                 choiceNumber = Convert.ToInt32(Console.ReadLine());
-                switch (choiceNumber)
+                switch (choiceNumber)           // switch case for getting user choice from menu.
                 {
                     case 1:
                         Console.WriteLine("How many contacts do you want to add ?");
