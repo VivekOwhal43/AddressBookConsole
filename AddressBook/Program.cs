@@ -7,7 +7,7 @@ namespace AddressBook
 {
     internal class Program
     {
-        public static int quit=0;
+        public static int quit = 0;
         static void Main(string[] args)
         {
             //AddContact[] addContact =new AddContact[4];
@@ -21,7 +21,7 @@ namespace AddressBook
             //until the choice is 2 for exit.
             {
                 Console.Write("\nSelect Option from below Menu");
-                Console.WriteLine("\n 1. Add Contact \n 2. Show Contact List \n 3. Search Via Name and Edit Contact \n 4. Search Via Name and Delete Contact");
+                Console.WriteLine("\n 1. Add Contact \n 2. Show Contact List \n 3. Search Via Name and Edit Contact \n 4. Search Via Name and Delete Contact \n 5. Add New Address Book");
                 Console.Write("\nEnter Choice: ");
                 choiceNumber = Convert.ToInt32(Console.ReadLine());
                 switch (choiceNumber)           // switch case for getting user choice from menu.
@@ -47,14 +47,18 @@ namespace AddressBook
                         addressBookMain.deleteContact();
                     break;
 
+                    case 5:
+                        
+                    break;
+
                     default:
                         Console.Write($"Enter A Value in specified Range");
                     break;
                 }
                 Console.Write("\nDo you want to continue in Address Book Main Menu ? \n Press 1 to Continue \n Press 2 to Exit\n");
                 Console.Write("\nEnter Choice: ");
-                quit =Convert.ToInt32(Console.ReadLine());
-            } while (quit !=2);
+                quit = Convert.ToInt32(Console.ReadLine());
+            } while (quit != 2);
         }
     }
 }
