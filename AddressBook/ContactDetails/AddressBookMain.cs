@@ -25,8 +25,8 @@ namespace AddressBook
                 {
                     dict.Add(n, new List<AddContact>()); // creating key value pair where address book name is key and all the redord of address book as value
                 }
-                
-            }            
+
+            }
         }
         public int temp = 0;
         public void DiplayListOfAddressBook() // Class method to display name Address book
@@ -47,21 +47,21 @@ namespace AddressBook
             }
         }
         public void DisplayDictionary() // Class method to display all the records of all address book
-        {            
+        {
             foreach (var content in dict.Keys) // Accessing all the address book name of dictionary
             {
-                Console.WriteLine("\n\nAddress Book : "+content);
+                Console.WriteLine("\n\nAddress Book : " + content);
                 int i = 1;
                 foreach (var value in dict[content].ToList()) // Accessing all the address book records  by dictionary key
-                {                   
-                    Console.WriteLine("\nRecord - "+i);
-                    Console.WriteLine("First Name : "+value.firstName);
-                    Console.WriteLine("Last Name : "+value.lastName);
-                    Console.WriteLine("Email : "+value.email);
-                    Console.WriteLine("City : "+value.city);
-                    Console.WriteLine("State : "+value.state);
-                    Console.WriteLine("Zip code : "+value.postalCode);
-                    Console.WriteLine("Phone Number : "+value.contactNumber);
+                {
+                    Console.WriteLine("\nRecord - " + i);
+                    Console.WriteLine("First Name : " + value.firstName);
+                    Console.WriteLine("Last Name : " + value.lastName);
+                    Console.WriteLine("Email : " + value.email);
+                    Console.WriteLine("City : " + value.city);
+                    Console.WriteLine("State : " + value.state);
+                    Console.WriteLine("Zip code : " + value.postalCode);
+                    Console.WriteLine("Phone Number : " + value.contactNumber);
                     i++;
                 }
             }
@@ -75,7 +75,7 @@ namespace AddressBook
             Console.WriteLine("Enter your Last Name : ");
             input.lastName = Console.ReadLine();
             Console.WriteLine("Enter your Email : ");
-            input.email= Console.ReadLine();
+            input.email = Console.ReadLine();
             Console.WriteLine("Enter your City Name : ");
             input.city = Console.ReadLine();
             Console.WriteLine("Enter your State Name : ");
@@ -107,16 +107,16 @@ namespace AddressBook
                                 Console.WriteLine($"\nThis Record is already present in {content} Address Book");
                             }
                         }
-                    }                   
+                    }
                 }
                 else
                 {
                     Console.WriteLine($"\n{content} Address Book not found");
                 }
-             
+
             }
-                   
-        }     
+
+        }
         string fn, ln;
         public void UpdateRecords(string ab) // Creating class method to update record which takes first name and last name as parameter
         {
@@ -194,7 +194,7 @@ namespace AddressBook
                 else
                 {
                     Console.WriteLine("Address book not found");
-                }                                                
+                }
             }
         }
         public void DeleteRecord(string ab)  // Creating class method to delete record which takes first name as parameter

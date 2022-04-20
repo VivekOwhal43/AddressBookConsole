@@ -12,16 +12,16 @@ namespace AddressBook
         {
             AddressBookMain records = new AddressBookMain(); // Creating a object of AddressBook class
             string ab;
-            Again: 
+        Again:
             while (true)
             {
-                Console.WriteLine("\n\nWelcome to Address Book System");               
+                Console.WriteLine("\n\nWelcome to Address Book System");
                 Console.WriteLine("1. Add a new Record");
                 Console.WriteLine("2. Update a Record");
                 Console.WriteLine("3. Delete a Record");
                 Console.WriteLine("4.Exit");
                 Console.WriteLine("\nEnter your choice : ");
-                
+
                 int ch = Convert.ToInt32(Console.ReadLine());// Storing a user choice in variable
                 switch (ch)
                 {
@@ -36,7 +36,7 @@ namespace AddressBook
                             records.CreateAddressBook(n); // Calling a method to Create a new Address Book 
                             records.AddRecords(n); // Calling a method of AddressBook class to add a new record to Address Book
                             records.DisplayDictionary(); // Displaying all records of All Address book
-                            
+
                         }
                         else
                         {
@@ -47,12 +47,12 @@ namespace AddressBook
                                 goto Again;
                             }
                             else
-                            {                               
+                            {
                                 Console.WriteLine("\nSelect any one address book from above list : ");
                                 ab = Console.ReadLine(); // Storing a address book name which is provided by user
                                 records.AddRecords(ab); // Calling a method of AddressBook class to add a new record to Address Book
                                 records.DisplayDictionary(); // Displaying all records of All Address book
-                            }                                                       
+                            }
                         }
                         break;
                     case 2:
@@ -68,7 +68,7 @@ namespace AddressBook
                             ab = Console.ReadLine();// Storing a address book name which is provided by user
                             records.UpdateRecords(ab); // Calling a method of AddressBook class to update record to Address Book
                             records.DisplayDictionary(); // Displaying all records of All Address book
-                        }                                            
+                        }
                         break;
                     case 3:
                         records.DiplayListOfAddressBook(); // Displaying existing address book name
@@ -83,7 +83,7 @@ namespace AddressBook
                             ab = Console.ReadLine(); // Storing a address book name which is provided by user                  
                             records.DeleteRecord(ab);// Calling a method of AddressBook class to delete record of address book
                             records.DisplayDictionary(); // Displaying all records of All Address book
-                        }                        
+                        }
                         break;
                     case 4:
                         System.Environment.Exit(0); // Exit
