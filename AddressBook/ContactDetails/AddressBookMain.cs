@@ -97,7 +97,8 @@ namespace AddressBook
                     {
                         foreach (var value in dict[content].ToList()) // Accessing all the record of address book by dictionary key
                         {
-                            if (value.contactNumber != input.contactNumber) // Checking that phone number provided by user is matching with Existing Reord or not
+                            //if (value.contactNumber != input.contactNumber) // Checking that phone number provided by user is matching with Existing Reord or not
+                            if(value != input)
                             {
                                 dict[name].Add(input);// Adding person record in Address book 
                                 Console.WriteLine("\nRecord Added successfully in Address Book");
